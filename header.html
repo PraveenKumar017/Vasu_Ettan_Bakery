@@ -11,21 +11,21 @@
 -->
 
 <header class="site-header">
-  <div class="container site-header__inner">
+  <div class="container site-header_inner">
     <a class="site-logo" href="index.html" aria-label="Vasu Ettan Bakery — Home">
       <img src="assets/header_logo.png" alt="" width="200" height="60" data-logo-img>
-      <span class="site-logo__name">Vasu Ettan Bakery</span>
+      <span class="site-logo_name">Vasu Ettan Bakery</span>
     </a>
 
     <nav class="site-nav" id="site-nav" aria-label="Main navigation">
-      <button class="icon-btn site-nav__close" type="button" data-nav-close aria-label="Close menu">
+      <button class="icon-btn site-nav_close" type="button" data-nav-close aria-label="Close menu">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
       </button>
-      <ul class="site-nav__list">
-        <li><a class="site-nav__link" href="index.html" data-nav-link="index">Home</a></li>
-        <li><a class="site-nav__link" href="shop.html" data-nav-link="shop">Shop</a></li>
-        <li><a class="site-nav__link" href="about.html" data-nav-link="about">About</a></li>
-        <li><a class="site-nav__link" href="blog.html" data-nav-link="blog">Blog</a></li>
+      <ul class="site-nav_list">
+        <li><a class="site-nav_link" href="index.html" data-nav-link="index">Home</a></li>
+        <li><a class="site-nav_link" href="shop.html" data-nav-link="shop">Shop</a></li>
+        <li><a class="site-nav_link" href="about.html" data-nav-link="about">About</a></li>
+        <li><a class="site-nav_link" href="blog.html" data-nav-link="blog">Blog</a></li>
       </ul>
     </nav>
 
@@ -47,9 +47,9 @@
   </div>
 
   <div class="header-search" id="header-search">
-    <form class="container header-search__form" data-header-search role="search">
+    <form class="container header-search_form" data-header-search role="search">
       <label class="sr-only" for="header-search-input">Search products</label>
-      <input class="header-search__input" id="header-search-input" type="search"
+      <input class="header-search_input" id="header-search-input" type="search"
         name="q" placeholder="Search varkey, biscuits, combos…" autocomplete="off">
       <button class="btn btn--primary btn--small" type="submit">Search</button>
     </form>
@@ -60,19 +60,19 @@
 <div class="overlay" data-overlay hidden></div>
 
 <aside class="drawer" id="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-drawer-title" aria-hidden="true">
-  <div class="drawer__header">
-    <h2 class="drawer__title" id="cart-drawer-title">Your Cart</h2>
+  <div class="drawer_header">
+    <h2 class="drawer_title" id="cart-drawer-title">Your Cart</h2>
     <button class="icon-btn" type="button" data-cart-close aria-label="Close cart">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>
     </button>
   </div>
-  <div class="drawer__body" data-cart-lines>
+  <div class="drawer_body" data-cart-lines>
     <!-- Filled by js/cart.js -->
   </div>
-  <div class="drawer__footer">
+  <div class="drawer_footer">
     <div class="cart-summary">
       <span>Subtotal</span>
-      <span class="cart-summary__total" data-cart-subtotal>₹0</span>
+      <span class="cart-summary_total" data-cart-subtotal>₹0</span>
     </div>
     <button class="btn btn--whatsapp" type="button" data-order-whatsapp>
       Order on WhatsApp

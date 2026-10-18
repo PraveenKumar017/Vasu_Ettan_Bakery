@@ -92,7 +92,7 @@
     card.className = "post-card reveal" + (featured ? " post-card--featured" : "");
 
     const media = document.createElement("a");
-    media.className = "post-card__media";
+    media.className = "post-card_media";
     media.href = "blog.html?slug=" + encodeURIComponent(post.slug);
     media.setAttribute("aria-label", "Read " + post.title);
     const img = document.createElement("img");
@@ -108,12 +108,12 @@
     media.appendChild(img);
 
     const body = document.createElement("div");
-    body.className = "post-card__body";
+    body.className = "post-card_body";
 
     const meta = document.createElement("p");
-    meta.className = "post-card__meta";
+    meta.className = "post-card_meta";
     const cat = document.createElement("span");
-    cat.className = "post-card__category";
+    cat.className = "post-card_category";
     cat.textContent = post.category;
     const date = document.createElement("span");
     date.textContent = formatDate(post.date);
@@ -124,18 +124,18 @@
     meta.appendChild(read);
 
     const title = document.createElement("h3");
-    title.className = "post-card__title";
+    title.className = "post-card_title";
     const titleLink = document.createElement("a");
     titleLink.href = "blog.html?slug=" + encodeURIComponent(post.slug);
     titleLink.textContent = post.title;
     title.appendChild(titleLink);
 
     const excerpt = document.createElement("p");
-    excerpt.className = "post-card__excerpt";
+    excerpt.className = "post-card_excerpt";
     excerpt.textContent = post.excerpt;
 
     const link = document.createElement("a");
-    link.className = "post-card__link";
+    link.className = "post-card_link";
     link.href = "blog.html?slug=" + encodeURIComponent(post.slug);
     link.textContent = "Read article →";
 
@@ -276,7 +276,7 @@
 
   function shareButtons(post) {
     const wrap = document.createElement("div");
-    wrap.className = "article__share";
+    wrap.className = "article_share";
 
     const url = SITE_URL + "blog.html?slug=" + encodeURIComponent(post.slug);
     const text = post.title;
@@ -363,12 +363,12 @@
 
       // Title
       const h1 = document.createElement("h1");
-      h1.className = "page-hero__title";
+      h1.className = "page-hero_title";
       h1.textContent = post.title;
 
       // Meta
       const meta = document.createElement("p");
-      meta.className = "article__meta";
+      meta.className = "article_meta";
       [
         "By " + (post.author || "Vasu Ettan Bakery"),
         formatDate(post.date),
@@ -382,7 +382,7 @@
 
       // Cover
       const coverWrap = document.createElement("div");
-      coverWrap.className = "article__cover";
+      coverWrap.className = "article_cover";
       const cover = document.createElement("img");
       cover.src = post.image;
       cover.alt = post.title;
@@ -396,7 +396,7 @@
 
       // Content
       const content = document.createElement("div");
-      content.className = "article__content";
+      content.className = "article_content";
       content.appendChild(renderBlocks(post.content));
 
       root.innerHTML = "";

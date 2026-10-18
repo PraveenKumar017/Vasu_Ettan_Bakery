@@ -191,7 +191,7 @@ const STORAGE_KEY = "veb_cart";
         row.className = "cart-line";
 
         const img = document.createElement("img");
-        img.className = "cart-line__img";
+        img.className = "cart-line_img";
         img.src = line.image;
         img.alt = "";
         img.width = 64;
@@ -203,10 +203,10 @@ const STORAGE_KEY = "veb_cart";
 
         const info = document.createElement("div");
         const name = document.createElement("p");
-        name.className = "cart-line__name";
+        name.className = "cart-line_name";
         name.textContent = line.name;
         const meta = document.createElement("p");
-        meta.className = "cart-line__meta";
+        meta.className = "cart-line_meta";
         meta.textContent = line.sizeLabel + " · " + Bakery.formatPrice(line.price) + " each";
 
         const stepper = document.createElement("div");
@@ -234,7 +234,7 @@ const STORAGE_KEY = "veb_cart";
 
         const remove = document.createElement("button");
         remove.type = "button";
-        remove.className = "cart-line__remove";
+        remove.className = "cart-line_remove";
         remove.textContent = "Remove";
         remove.addEventListener("click", function () {
           Bakery.cart.remove(key);
@@ -246,7 +246,7 @@ const STORAGE_KEY = "veb_cart";
         info.appendChild(remove);
 
         const priceEl = document.createElement("p");
-        priceEl.className = "cart-line__price";
+        priceEl.className = "cart-line_price";
         priceEl.textContent = Bakery.formatPrice(line.price * line.qty);
 
         row.appendChild(img);

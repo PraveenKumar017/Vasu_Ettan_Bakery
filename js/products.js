@@ -96,7 +96,7 @@
 
     // Media
     const media = document.createElement("div");
-    media.className = "product-card__media";
+    media.className = "product-card_media";
     const img = document.createElement("img");
     img.src = item.image;
     img.alt = item.name + " — " + item.category + " from Vasu Ettan Bakery";
@@ -110,7 +110,7 @@
     media.appendChild(img);
 
     const tag = document.createElement("span");
-    tag.className = "product-card__tag";
+    tag.className = "product-card_tag";
     tag.textContent = item.category;
     media.appendChild(tag);
     media.addEventListener("click", function () {
@@ -119,13 +119,13 @@
 
     // Body
     const body = document.createElement("div");
-    body.className = "product-card__body";
+    body.className = "product-card_body";
 
     const nameWrap = document.createElement("h3");
-    nameWrap.className = "product-card__name";
+    nameWrap.className = "product-card_name";
     const nameBtn = document.createElement("button");
     nameBtn.type = "button";
-    nameBtn.className = "product-card__link-btn";
+    nameBtn.className = "product-card_link-btn";
     nameBtn.textContent = item.name;
     nameBtn.setAttribute("aria-label", "View details for " + item.name);
     nameBtn.addEventListener("click", function () {
@@ -134,14 +134,14 @@
     nameWrap.appendChild(nameBtn);
 
     const price = document.createElement("p");
-    price.className = "product-card__price";
+    price.className = "product-card_price";
 
     body.appendChild(nameWrap);
     body.appendChild(price);
 
     if (Bakery.isCombo(item)) {
       const inc = document.createElement("p");
-      inc.className = "product-card__includes";
+      inc.className = "product-card_includes";
       inc.textContent =
         "Includes: " +
         item.includes
@@ -153,7 +153,7 @@
     }
 
     const footer = document.createElement("div");
-    footer.className = "product-card__footer";
+    footer.className = "product-card_footer";
 
     let sizeIndex = 0;
 
@@ -166,7 +166,7 @@
       item.sizes.forEach(function (size, idx) {
         const btn = document.createElement("button");
         btn.type = "button";
-        btn.className = "size-select__btn";
+        btn.className = "size-select_btn";
         btn.textContent = size.label;
         btn.setAttribute("aria-pressed", String(idx === 0));
         btn.addEventListener("click", function () {
@@ -358,24 +358,24 @@
     modal.setAttribute("aria-labelledby", "modal-title");
     modal.setAttribute("aria-hidden", "true");
     modal.innerHTML =
-      '<div class="modal__panel">' +
-      '<button class="icon-btn modal__close" type="button" aria-label="Close product details">' +
+      '<div class="modal_panel">' +
+      '<button class="icon-btn modal_close" type="button" aria-label="Close product details">' +
       '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg>' +
       "</button>" +
-      '<div class="modal__grid">' +
-      '<div class="modal__media" data-modal-media></div>' +
-      '<div class="modal__body">' +
-      '<h2 class="modal__title" id="modal-title" data-modal-title></h2>' +
-      '<p class="modal__price" data-modal-price></p>' +
-      '<p class="modal__desc" data-modal-desc></p>' +
+      '<div class="modal_grid">' +
+      '<div class="modal_media" data-modal-media></div>' +
+      '<div class="modal_body">' +
+      '<h2 class="modal_title" id="modal-title" data-modal-title></h2>' +
+      '<p class="modal_price" data-modal-price></p>' +
+      '<p class="modal_desc" data-modal-desc></p>' +
       '<div data-modal-includes></div>' +
-      '<p class="modal__availability">✓ In stock — baked fresh daily</p>' +
+      '<p class="modal_availability">✓ In stock — baked fresh daily</p>' +
       '<div data-modal-sizes></div>' +
-      '<div class="modal__actions" data-modal-actions></div>' +
+      '<div class="modal_actions" data-modal-actions></div>' +
       "</div></div></div>";
     document.body.appendChild(modal);
 
-    modal.querySelector(".modal__close").addEventListener("click", closeModal);
+    modal.querySelector(".modal_close").addEventListener("click", closeModal);
     modal.addEventListener("click", function (e) {
       if (e.target === modal) closeModal();
     });
@@ -451,10 +451,10 @@
     includesWrap.innerHTML = "";
     if (Bakery.isCombo(item)) {
       const label = document.createElement("p");
-      label.className = "modal__label";
+      label.className = "modal_label";
       label.textContent = "What's included (" + item.weight + ")";
       const list = document.createElement("ul");
-      list.className = "modal__includes";
+      list.className = "modal_includes";
       item.includes.forEach(function (inc) {
         const li = document.createElement("li");
         li.textContent = inc.name + " — " + inc.quantity;
@@ -469,7 +469,7 @@
     sizesWrap.innerHTML = "";
     if (!Bakery.isCombo(item)) {
       const label = document.createElement("p");
-      label.className = "modal__label";
+      label.className = "modal_label";
       label.textContent = "Choose size";
       const selector = document.createElement("div");
       selector.className = "size-select";
@@ -478,7 +478,7 @@
       item.sizes.forEach(function (size, idx) {
         const btn = document.createElement("button");
         btn.type = "button";
-        btn.className = "size-select__btn";
+        btn.className = "size-select_btn";
         btn.textContent = size.label + " · ₹" + size.price;
         btn.setAttribute("aria-pressed", String(idx === 0));
         btn.addEventListener("click", function () {
@@ -556,7 +556,7 @@
     el.classList.add("is-open");
     el.setAttribute("aria-hidden", "false");
     document.body.classList.add("is-locked");
-    el.querySelector(".modal__close").focus();
+    el.querySelector(".modal_close").focus();
   }
 
   Bakery.openProductModal = openModal;

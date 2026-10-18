@@ -123,9 +123,6 @@
     document.querySelectorAll("[data-current-year]").forEach(function (el) {
       el.textContent = String(new Date().getFullYear());
     });
-
-    initNav();
-    initSearch();
   }
 
   /* ---------- Mobile navigation ---------- */
