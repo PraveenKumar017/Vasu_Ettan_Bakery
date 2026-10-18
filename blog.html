@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | Vasu Ettan Bakery — Stories from Our Oven</title>
+  <meta name="description" content="Baking tips, bakery stories, ingredient notes and recipes from Vasu Ettan Bakery.">
+  <link rel="canonical" href="https://www.vasuettanbakery.com/blog.html" data-canonical>
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Blog | Vasu Ettan Bakery — Stories from Our Oven" data-og-title>
+  <meta property="og:description" content="Baking tips, bakery stories, ingredient notes and recipes from Vasu Ettan Bakery." data-og-desc>
+  <meta property="og:image" content="assets/images/hero-bakery.webp" data-og-image>
+  <meta property="og:url" content="https://www.vasuettanbakery.com/blog.html" data-og-url>
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Shared header (fetched by js/main.js) -->
+  <div data-include="header"></div>
+
+  <main id="main-content">
+
+    <!-- ===== List view (default) ===== -->
+    <div id="blog-list-view">
+      <section class="page-hero" aria-labelledby="blog-title">
+        <div class="container">
+          <span class="section-kicker">The blog</span>
+          <h1 class="page-hero__title" id="blog-title">Stories from Our Oven.</h1>
+          <p class="page-hero__text">Tips, tales and recipes from the bakery floor.
+            <!-- Sample content: articles are placeholders until the bakery supplies real posts. -->
+          </p>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="posts-heading">
+        <div class="container">
+          <h2 class="sr-only" id="posts-heading">Articles</h2>
+
+          <div class="shop-toolbar">
+            <div class="filter-chips" role="group" aria-label="Filter by category">
+              <button class="chip" type="button" data-post-filter="All" aria-pressed="true">All</button>
+              <button class="chip" type="button" data-post-filter="Baking Tips" aria-pressed="false">Baking Tips</button>
+              <button class="chip" type="button" data-post-filter="Bakery Stories" aria-pressed="false">Bakery Stories</button>
+              <button class="chip" type="button" data-post-filter="Ingredients" aria-pressed="false">Ingredients</button>
+              <button class="chip" type="button" data-post-filter="Recipes" aria-pressed="false">Recipes</button>
+              <button class="chip" type="button" data-post-filter="News" aria-pressed="false">News</button>
+            </div>
+            <div class="shop-controls">
+              <div class="field">
+                <label for="blog-search">Search</label>
+                <input class="input" id="blog-search" type="search" placeholder="Search articles…"
+                  autocomplete="off">
+              </div>
+            </div>
+          </div>
+
+          <div id="blog-featured"></div>
+
+          <div class="blog-grid mt-2" id="blog-grid">
+            <noscript>
+              <p class="empty-state">Enable JavaScript to read the blog.</p>
+            </noscript>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ===== Detail view (?slug=...) ===== -->
+    <div id="blog-detail-view" hidden>
+      <section class="section">
+        <div class="container">
+          <article class="article" id="article-root">
+            <!-- Filled by js/blog.js -->
+          </article>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- Shared footer (fetched by js/main.js) -->
+  <div data-include="footer"></div>
+
+  <script type="application/ld+json" id="article-jsonld"></script>
+  <script src="js/main.js"></script>
+  <script src="js/blog.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

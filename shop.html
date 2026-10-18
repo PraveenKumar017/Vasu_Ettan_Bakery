@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop | Vasu Ettan Bakery — Varkey, Biscuits &amp; Combos</title>
+  <meta name="description" content="Shop freshly baked varkey, biscuits and signature combos from Vasu Ettan Bakery. Choose your size and order on WhatsApp.">
+  <link rel="canonical" href="https://www.vasuettanbakery.com/shop.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Shop | Vasu Ettan Bakery">
+  <meta property="og:description" content="Made fresh, shared with love — varkey, biscuits and combos available by weight.">
+  <meta property="og:image" content="assets/images/hero-bakery.webp">
+  <meta property="og:url" content="https://www.vasuettanbakery.com/shop.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Shared header (fetched by js/main.js) -->
+  <div data-include="header"></div>
+
+  <main id="main-content">
+
+    <section class="page-hero" aria-labelledby="shop-title">
+      <div class="container">
+        <span class="section-kicker">The bakery counter</span>
+        <h1 class="page-hero__title" id="shop-title">Made Fresh, Shared with Love.</h1>
+        <p class="page-hero__text">Varkey and biscuits sold by weight, plus fixed-price
+          combos — baked fresh and packed the same day. Retail &amp; wholesale available,
+          and pre-order cakes also available — contact us on WhatsApp.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="shop-grid-title">
+      <div class="container">
+        <h2 class="sr-only" id="shop-grid-title">Products</h2>
+
+        <div class="shop-toolbar">
+          <div class="filter-chips" role="group" aria-label="Filter by category">
+            <button class="chip" type="button" data-filter="All" aria-pressed="true">All</button>
+            <button class="chip" type="button" data-filter="Varkey" aria-pressed="false">Varkey</button>
+            <button class="chip" type="button" data-filter="Biscuits" aria-pressed="false">Biscuits</button>
+            <button class="chip" type="button" data-filter="Combos" aria-pressed="false">Combos</button>
+          </div>
+
+          <div class="shop-controls">
+            <div class="field">
+              <label for="shop-search">Search</label>
+              <input class="input" id="shop-search" type="search" placeholder="Search products…"
+                autocomplete="off">
+            </div>
+            <div class="field">
+              <label for="shop-sort">Sort by</label>
+              <select class="select" id="shop-sort">
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: low to high</option>
+                <option value="price-desc">Price: high to low</option>
+                <option value="name">Name: A–Z</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <p class="form-hint" id="shop-count" role="status" aria-live="polite">Loading products…</p>
+
+        <div class="product-grid" id="shop-grid">
+          <noscript>
+            <p class="empty-state">Enable JavaScript to browse products, or contact us
+              directly to order.</p>
+          </noscript>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared footer (fetched by js/main.js) -->
+  <div data-include="footer"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

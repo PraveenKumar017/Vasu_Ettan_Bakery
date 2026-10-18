@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vasu Ettan Bakery | Freshly Baked Varkey, Biscuits &amp; Combos</title>
+  <meta name="description" content="Vasu Ettan Bakery — traditional varkey, biscuits and signature combos baked fresh every day. Every bite tells a story.">
+  <link rel="canonical" href="https://www.vasuettanbakery.com/index.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Vasu Ettan Bakery | Every Bite Tells a Story">
+  <meta property="og:description" content="Discover the warmth of freshly baked favourites — varkey, biscuits and combos made for life's sweetest moments.">
+  <meta property="og:image" content="assets/images/hero-bakery.webp">
+  <meta property="og:url" content="https://www.vasuettanbakery.com/index.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <!-- Shared header (fetched by js/main.js) -->
+  <div data-include="header"></div>
+
+  <main id="main-content">
+
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero__media">
+        <img src="assets/images/hero-bakery.webp" alt="Freshly baked goods cooling on shelves inside Vasu Ettan Bakery"
+          width="1600" height="900" fetchpriority="high" data-remove-on-error>
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Authentic Ooty Varkey · Since 1980</p>
+          <h1 class="hero__title" id="hero-title">Every Bite Tells a Story.</h1>
+          <p class="hero__text">Discover the warmth of freshly baked favourites, made for life's sweetest moments.</p>
+          <a class="btn btn--primary" href="shop.html">Shop now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured categories -->
+    <section class="section" aria-labelledby="categories-title">
+      <div class="container">
+        <span class="section-kicker">Our range</span>
+        <h2 class="section-heading" id="categories-title">Featured Categories</h2>
+        <hr class="divider">
+        <div class="category-grid">
+          <a class="category-card reveal" href="shop.html?category=Varkey">
+            <div class="category-card__body">
+              <h3 class="category-card__title">Varkey</h3>
+              <span class="category-card__link">Shop varkey →</span>
+            </div>
+          </a>
+          <a class="category-card reveal" href="shop.html?category=Biscuits">
+            <div class="category-card__body">
+              <h3 class="category-card__title">Biscuits</h3>
+              <span class="category-card__link">Shop biscuits →</span>
+            </div>
+          </a>
+          <a class="category-card reveal" href="shop.html?category=Combos">
+            <div class="category-card__body">
+              <h3 class="category-card__title">Combos</h3>
+              <span class="category-card__link">Shop combos →</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bestsellers -->
+    <section class="section section--alt" aria-labelledby="bestsellers-title">
+      <div class="container">
+        <span class="section-kicker">Customer favourites</span>
+        <h2 class="section-heading" id="bestsellers-title">Bestsellers</h2>
+        <p class="section-intro">Our signature combos and most-loved bakes, ready to add to your cart.</p>
+        <div class="product-grid" id="bestsellers-grid">
+          <noscript>
+            <p class="empty-state">Enable JavaScript to view bestsellers, or visit the
+              <a class="link-arrow" href="shop.html">shop page</a>.</p>
+          </noscript>
+        </div>
+        <p class="text-center reveal mt-2">
+          <a class="btn btn--outline" href="shop.html">View all products</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Our Story teaser -->
+    <section class="section" aria-labelledby="story-title">
+      <div class="container split">
+        <div class="split__media reveal">
+          <img src="assets/images/about/story-teaser.webp" alt="Baker preparing dough by hand at Vasu Ettan Bakery"
+            width="720" height="540" loading="lazy" data-fallback="Story photo coming soon">
+        </div>
+        <div class="reveal">
+          <span class="section-kicker text-left">Our story</span>
+          <h2 class="split__title" id="story-title">Warm Greetings from Kotagiri</h2>
+          <p>Manufacturers of <strong>authentic Ooty Varkey since 1980</strong> — with
+            a variety of varkey and biscuits made with a commitment to quality.
+            Retail &amp; wholesale, and pre-order cakes also available.</p>
+          <a class="link-arrow" href="about.html">Read our full story →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Freshly baked / craftsmanship -->
+    <section class="section section--alt" aria-labelledby="craft-title">
+      <div class="container split">
+        <div class="reveal">
+          <span class="section-kicker text-left">Freshly baked</span>
+          <h2 class="split__title" id="craft-title">Craftsmanship in Every Batch</h2>
+          <p>We bake in small batches through the day so what reaches you is never off
+            the shelf for long. Traditional methods, careful timing, and a close eye on
+            every tray.</p>
+          <ul class="feature-list">
+            <li>
+              <span class="feature-list__icon" aria-hidden="true">1</span>
+              <div>
+                <p class="feature-list__title">Baked fresh daily</p>
+                <p class="feature-list__text">Multiple batches through the day for that just-baked texture.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-list__icon" aria-hidden="true">2</span>
+              <div>
+                <p class="feature-list__title">Traditional recipes</p>
+                <p class="feature-list__text">Time-tested methods passed down through generations.</p>
+              </div>
+            </li>
+            <li>
+              <span class="feature-list__icon" aria-hidden="true">3</span>
+              <div>
+                <p class="feature-list__title">Consistent quality</p>
+                <p class="feature-list__text">The same taste and crunch, box after box.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="split__media reveal">
+          <img src="assets/images/about/craftsmanship.webp" alt="Golden varkey arranged on a baking tray"
+            width="720" height="540" loading="lazy" data-fallback="Bakery photo coming soon">
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials (placeholder — real reviews only) -->
+    <section class="section" aria-labelledby="testimonials-title">
+      <div class="container">
+        <span class="section-kicker">Kind words</span>
+        <h2 class="section-heading" id="testimonials-title">What Our Customers Say</h2>
+        <hr class="divider">
+        <div class="testimonial-grid">
+          <!-- TODO: replace these placeholders with verified customer reviews.
+               Do not publish invented testimonials. -->
+          <figure class="testimonial reveal">
+            <blockquote class="testimonial__quote">“Real customer review to be added here — placeholder block awaiting verified feedback.”</blockquote>
+            <figcaption class="testimonial__author">Customer name — TODO</figcaption>
+            <p class="testimonial__meta">Placeholder · not a real review</p>
+          </figure>
+          <figure class="testimonial reveal">
+            <blockquote class="testimonial__quote">“Real customer review to be added here — placeholder block awaiting verified feedback.”</blockquote>
+            <figcaption class="testimonial__author">Customer name — TODO</figcaption>
+            <p class="testimonial__meta">Placeholder · not a real review</p>
+          </figure>
+          <figure class="testimonial reveal">
+            <blockquote class="testimonial__quote">“Real customer review to be added here — placeholder block awaiting verified feedback.”</blockquote>
+            <figcaption class="testimonial__author">Customer name — TODO</figcaption>
+            <p class="testimonial__meta">Placeholder · not a real review</p>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="section" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="newsletter reveal">
+          <h2 class="newsletter__title" id="newsletter-title">Fresh From the Oven</h2>
+          <p class="newsletter__text">Join our list for new bakes, seasonal combos and bakery news.
+            <!-- TODO: connect this form to a real email service (Mailchimp, Brevo, etc.). -->
+          </p>
+          <form class="newsletter__form" id="newsletter-form" novalidate>
+            <label class="sr-only" for="newsletter-email">Email address</label>
+            <input class="newsletter__input" id="newsletter-email" name="email" type="email"
+              placeholder="you@example.com" required autocomplete="email">
+            <button class="btn btn--primary" type="submit">Subscribe</button>
+          </form>
+          <p class="newsletter__msg" id="newsletter-msg" role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Shared footer (fetched by js/main.js) -->
+  <div data-include="footer"></div>
+
+  <script src="js/main.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
