@@ -8,7 +8,7 @@
       "date": "2026-01-15",
       "readingTime": "4 min read",
       "featured": true,
-      "image": "assets/images/blog/perfect-varkey.webp",
+      "image": "assets/images/products/varkey.png",
       "excerpt": "SAMPLE CONTENT — A short look at what makes a varkey light, layered and endlessly snackable. Final text to be confirmed by the bakery.",
       "content": [
         { "type": "p", "text": "SAMPLE CONTENT — This is placeholder copy written only to demonstrate the article layout. The bakery will supply the final story before this page goes live." },
@@ -27,7 +27,7 @@
       "date": "2026-01-22",
       "readingTime": "3 min read",
       "featured": false,
-      "image": "assets/images/blog/tea-time-combo.webp",
+      "image": "assets/images/products/Cookies_Treats.png",
       "excerpt": "SAMPLE CONTENT — Simple pairing ideas to make your combo box last all week. Final recipes to be confirmed by the bakery.",
       "content": [
         { "type": "p", "text": "SAMPLE CONTENT — Placeholder article used to demonstrate the blog detail view. All recipes below must be confirmed by the bakery." },
@@ -44,7 +44,7 @@
       "date": "2026-01-29",
       "readingTime": "5 min read",
       "featured": false,
-      "image": "assets/images/blog/day-at-the-bakery.webp",
+      "image": "assets/images/products/varkey.png",
       "excerpt": "SAMPLE CONTENT — A walk-through of a typical baking day, from the early mix to the first warm batch on the shelf.",
       "content": [
         { "type": "p", "text": "SAMPLE CONTENT — Placeholder article. The bakery will replace this with a real account of how each day begins." },

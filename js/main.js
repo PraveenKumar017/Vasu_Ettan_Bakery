@@ -342,6 +342,8 @@
     initNewsletter();
     loadPartials().then(function () {
       initHeader();
+      initNav();
+      initSearch();
       syncCartBadge();
       document.dispatchEvent(new CustomEvent("partials:ready"));
     });

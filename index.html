@@ -28,14 +28,17 @@
 
     <!-- Hero -->
     <section class="hero" aria-labelledby="hero-title">
-      <div class="hero__media">
-        <img src="assets/images/hero-bakery.webp" alt="Freshly baked goods cooling on shelves inside Vasu Ettan Bakery"
-          width="1600" height="900" fetchpriority="high" data-remove-on-error>
+      <div class="hero__media hero__media--right">
+        <picture>
+          <source media="(max-width: 767px)" srcset="assets/hero_image_mobile.png?v=2">
+          <img src="assets/hero_image_bg.png?v=2" alt="Freshly baked varkey and biscuits at Vasu Ettan Bakery"
+            width="1486" height="672" fetchpriority="high" data-remove-on-error>
+        </picture>
       </div>
       <div class="hero__overlay" aria-hidden="true"></div>
       <div class="container">
         <div class="hero__content">
-          <p class="hero__eyebrow">Authentic Ooty Varkey · Since 1980</p>
+          <p class="hero__eyebrow">Authentic Ooty Varkey &middot; Since 1980</p>
           <h1 class="hero__title" id="hero-title">Every Bite Tells a Story.</h1>
           <p class="hero__text">Discover the warmth of freshly baked favourites, made for life's sweetest moments.</p>
           <a class="btn btn--primary" href="shop.html">Shop now</a>
@@ -51,21 +54,31 @@
         <hr class="divider">
         <div class="category-grid">
           <a class="category-card reveal" href="shop.html?category=Varkey">
+            <img class="category-card__texture" src="assets/Categories/varkey.png" alt="" aria-hidden="true" loading="lazy" data-remove-on-error>
             <div class="category-card__body">
               <h3 class="category-card__title">Varkey</h3>
-              <span class="category-card__link">Shop varkey →</span>
+              <span class="category-card__link">Shop varkey &rarr;</span>
             </div>
           </a>
-          <a class="category-card reveal" href="shop.html?category=Biscuits">
+          <a class="category-card reveal" href="shop.html?category=Salt%20Biscuit">
+            <img class="category-card__texture" src="assets/Categories/salt_biscuit.png" alt="" aria-hidden="true" loading="lazy" data-remove-on-error>
             <div class="category-card__body">
-              <h3 class="category-card__title">Biscuits</h3>
-              <span class="category-card__link">Shop biscuits →</span>
+              <h3 class="category-card__title">Salt Biscuit</h3>
+              <span class="category-card__link">Shop salt biscuit &rarr;</span>
             </div>
           </a>
-          <a class="category-card reveal" href="shop.html?category=Combos">
+          <a class="category-card reveal" href="shop.html?category=Sweet%20Biscuit">
+            <img class="category-card__texture" src="assets/Categories/sweet_biscuit.png" alt="" aria-hidden="true" loading="lazy" data-remove-on-error>
             <div class="category-card__body">
-              <h3 class="category-card__title">Combos</h3>
-              <span class="category-card__link">Shop combos →</span>
+              <h3 class="category-card__title">Sweet Biscuit</h3>
+              <span class="category-card__link">Shop sweet biscuit &rarr;</span>
+            </div>
+          </a>
+          <a class="category-card reveal" href="shop.html?category=Cakes">
+            <img class="category-card__texture" src="assets/Categories/cake.png" alt="" aria-hidden="true" loading="lazy" data-remove-on-error>
+            <div class="category-card__body">
+              <h3 class="category-card__title">Cakes</h3>
+              <span class="category-card__link">Shop cakes &rarr;</span>
             </div>
           </a>
         </div>
@@ -94,8 +107,8 @@
     <section class="section" aria-labelledby="story-title">
       <div class="container split">
         <div class="split__media reveal">
-          <img src="assets/images/about/story-teaser.webp" alt="Baker preparing dough by hand at Vasu Ettan Bakery"
-            width="720" height="540" loading="lazy" data-fallback="Story photo coming soon">
+          <img src="assets/our_story.png" alt="Baker preparing dough by hand at Vasu Ettan Bakery"
+            width="1078" height="1042" loading="lazy" data-fallback="Story photo coming soon">
         </div>
         <div class="reveal">
           <span class="section-kicker text-left">Our story</span>
@@ -103,7 +116,7 @@
           <p>Manufacturers of <strong>authentic Ooty Varkey since 1980</strong> — with
             a variety of varkey and biscuits made with a commitment to quality.
             Retail &amp; wholesale, and pre-order cakes also available.</p>
-          <a class="link-arrow" href="about.html">Read our full story →</a>
+          <a class="link-arrow" href="about.html">Read our full story &rarr;</a>
         </div>
       </div>
     </section>
@@ -119,21 +132,21 @@
             every tray.</p>
           <ul class="feature-list">
             <li>
-              <span class="feature-list__icon" aria-hidden="true">1</span>
+              <span class="feature-list__icon" aria-hidden="true">✦</span>
               <div>
                 <p class="feature-list__title">Baked fresh daily</p>
                 <p class="feature-list__text">Multiple batches through the day for that just-baked texture.</p>
               </div>
             </li>
             <li>
-              <span class="feature-list__icon" aria-hidden="true">2</span>
+              <span class="feature-list__icon" aria-hidden="true">❋</span>
               <div>
                 <p class="feature-list__title">Traditional recipes</p>
                 <p class="feature-list__text">Time-tested methods passed down through generations.</p>
               </div>
             </li>
             <li>
-              <span class="feature-list__icon" aria-hidden="true">3</span>
+              <span class="feature-list__icon" aria-hidden="true">✓</span>
               <div>
                 <p class="feature-list__title">Consistent quality</p>
                 <p class="feature-list__text">The same taste and crunch, box after box.</p>
@@ -142,8 +155,8 @@
           </ul>
         </div>
         <div class="split__media reveal">
-          <img src="assets/images/about/craftsmanship.webp" alt="Golden varkey arranged on a baking tray"
-            width="720" height="540" loading="lazy" data-fallback="Bakery photo coming soon">
+          <img src="assets/Craftsmanship.png" alt="Golden varkey arranged on a baking tray"
+            width="1376" height="768" loading="lazy" data-fallback="Bakery photo coming soon">
         </div>
       </div>
     </section>

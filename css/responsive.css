@@ -99,6 +99,10 @@
     grid-template-columns: 1fr;
   }
 
+  .split__media img {
+    height: 280px;
+  }
+
   .modal__grid {
     grid-template-columns: 1fr;
   }
@@ -111,8 +115,23 @@
     min-height: 200px;
   }
 
-  .hero {
-    min-height: 440px;
+  .hero__content {
+    padding-block: 1.25rem 3.25rem;
+    text-align: center;
+    margin-inline: auto;
+  }
+
+  .page-hero--shop {
+    padding-block: 3rem;
+  }
+
+  .hero__text {
+    margin-inline: auto;
+  }
+
+  .hero__media--right img {
+    object-fit: cover;
+    object-position: center;
   }
 }
 
@@ -135,7 +154,7 @@
   }
 
   .category-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .testimonial-grid,
@@ -206,7 +225,7 @@
   }
 
   .site-logo img {
-    height: 34px;
+    height: 44px;
   }
 
   .product-card__body {
