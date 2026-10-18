@@ -406,9 +406,17 @@ p {
 }
 
 .site-logo img {
-  height: 56px;
+  height: 48px;
   width: auto;
   border-radius: var(--radius-sm);
+}
+
+.site-logo__name {
+  font-family: var(--font-heading);
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: var(--color-heading);
+  line-height: 1.1;
 }
 
 .site-logo__fallback {
@@ -417,10 +425,6 @@ p {
 
 .site-logo.is-fallback img {
   display: none;
-}
-
-.site-logo.is-fallback .site-logo__fallback {
-  display: block;
 }
 
 .site-nav__list {
@@ -639,6 +643,15 @@ p {
   text-transform: uppercase;
   color: var(--color-gold);
   margin-bottom: 1rem;
+}
+
+.hero__brand {
+  font-family: var(--font-heading);
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--color-gold);
+  margin-bottom: 0.5rem;
 }
 
 .hero__title {
